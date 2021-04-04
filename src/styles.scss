@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import "variables";
+
+* {
+  box-sizing: border-box!important;
+  outline: none !important;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-h;
+  font-style: $font-style;
+  color: $color-text;
+}
+
+body {
+  background: $body-bg;
+  width: $bd-w;
+  height: $bd-h;
+  padding: 3vh 0;
+  overflow-x: hidden;
+  //background-repeat: no-repeat;
+}
+
+.card {
+  background: $white-bg;
+  border-radius: $br-rad;
+  box-shadow: $shadow;
+}
+
+.col-xs-4 {
+  margin-top: 2vh!important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.row {
+  justify-content: space-between!important;
+}

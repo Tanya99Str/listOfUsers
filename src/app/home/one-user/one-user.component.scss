@@ -1,0 +1,77 @@
+.card {
+  position: relative;
+}
+
+.photo {
+  width: 8vh;
+  height: 8vh;
+  transform: rotate(45deg);
+  overflow: hidden;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+.photo > img {
+  width: 100%;
+  transform: rotate(-45deg) scale(1.42);
+}
+
+.email {
+  background: white;
+  border: none;
+  max-width: 4vw;
+  padding: .2px;
+  position: absolute;
+  right: 1vw;
+  top: 1vh;
+}
+
+.email:hover svg {
+  fill: #8F96D3;
+}
+
+ul {
+  width: 90%;
+  list-style: none;
+  padding: 0;
+  padding-bottom: 7vh;
+  margin: auto;
+}
+
+li {
+  width: 100%;
+  border-bottom: 2px solid rgba(122, 143, 165, 0.4);
+  display: grid;
+  grid-template-columns: 35% 62%;
+  justify-content: space-between;
+  padding: 1vh 0;
+  font-weight: bold;
+  color: #000000;
+  text-align: right;
+}
+
+.header {
+  color: #7A8FA5!important;
+  text-transform: uppercase;
+  font-weight: 500!important;
+  text-align: left!important;
+  font-size: .9em!important;
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 400px) {
+  .email {
+    right: 4vw;
+  }
+  .photo {
+    width: 10vh;
+    height: 10vh;
+    margin-top: 3vh;
+  }
+}
+

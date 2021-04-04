@@ -1,0 +1,101 @@
+.container {
+  width: 75%;
+  height: 100vh;
+  margin: auto;
+}
+
+.card {
+  width: 30%;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+
+.list {
+  width: 100%;
+}
+
+.col-xs-4 {
+  width: 32% !important;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+nav {
+  margin: auto!important;
+}
+
+.pagination {
+  width: 100%;
+  padding: 2vh 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  background: #FFFFFF;
+  width: 6vh;
+  height: 6vh;
+  border: 1px solid #8FB1D3;
+  border-radius: 4px;
+  color: #7A8FA5;
+  margin-right: .7vw;
+  font-size: 1.1em;
+}
+
+.pagination button:last-child {
+  margin-right: 0;
+}
+
+.pagination button:hover {
+  color: #000000;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    width: 80%;
+  }
+  .card {
+    width: 35% !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 80%;
+  }
+  .card {
+    width: 45% !important;
+  }
+  .col-xs-4 {
+    width: 48% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
+  .card {
+    width: 70% !important;
+  }
+  .col-xs-4 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 80%;
+  }
+  .card {
+    width: 85% !important;
+  }
+  .col-xs-4 {
+    width: 100% !important;
+  }
+}
